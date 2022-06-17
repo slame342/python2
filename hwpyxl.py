@@ -77,20 +77,6 @@ for row in range(0, len(new_array)):
     for col in range(0, len(new_array[col])):
         worksheet.cell(row=row + 1, column=col + 1).value = new_array[row][col]
 
-for i in range(0, len_max):
-    try:
-        part1 = array1[i]
-    except Exception as error:
-        part1 = ""
-    try:
-        part2 = array2[i]
-    except Exception as error:
-        part2 = ""
-    try:
-        part3 = array3[i]
-    except Exception as error:
-        part3 = ""
-
 worksheet = workbook.active
 
 wsheet2 = workbook.create_sheet("sheet2")
